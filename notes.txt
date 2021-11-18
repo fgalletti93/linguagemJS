@@ -40,4 +40,41 @@ armazenamento local {
     gardar informação no navegador do usuário. Essas informações podem ser recuperadas mais tarde, quando ele retornar ao nosso site. 
 
         →Tipos de ino que podem ser guardadas
+            -dados de acesso, como o nome de usuário
+            -estado da aplicação, como a última página que ele visitou
+            -informações de configuração do site, que personalizam a sua experiência
+            -dados para funcionamento off-line
+
+        →API Web Storage
+            -window.localStorage : Armazenamento permanente dos dados
+            -window.sessionStorage : Armazenamento por uma sessão (mesma janela e mesma aba, inclusive durante recargas da página)
+}
+
+
+AJAX = Asynchronou JavaScript and XML {
+    várias tecnologias combinadas
+        -apresentação baseada em padrões como HTML e CSS
+        -exibição dinâmica através do DOM
+        -troca e manipulação de dados com XML(ou JSON)
+        -recuperação assíncrona de dados com XMLHttpRequest (coração do Ajax é o objeto XMLHttpRequest);
+            {
+                let xhttp = new XMLHttpRequest();
+            }
+        -JavaScript para ajuntar tudo
+
+
+        /**
+            function iniciaAjax() {
+
+                let xhttp = null;
+                try {
+                    xhttp = new XMLHttpRequest();
+                } catch (e) {
+                    alert("Seu navegador não suporta Ajax");
+                    return false;
+                }
+            }
+        **/
+
+        -A propriedade onreadystatechange do objeto XMLHttpRequest é chamada a cada vez que o estado da resposta (readyState) muda
 }

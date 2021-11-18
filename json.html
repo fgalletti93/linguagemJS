@@ -27,8 +27,7 @@
         console.log(1, user, typeof user);
         console.log(2, strUser, typeof strUser);
 
-        let user2 = JSON.parse(strUser);
-        console.log(3, user2, typeof user2);
+        localStorage.setItem("user", JSON.stringify(user))
         
 
     </script>
