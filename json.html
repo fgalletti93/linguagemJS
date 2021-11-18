@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula JSON</title>
+
+    <script>
+        let user = {
+            "name": "Jackson",
+            "age": 36,
+            "children": [
+                {
+                    "name": "Jessica",
+                    "age": 13
+                }, {
+                    "name": "Jefferson",
+                    "age": 10
+                }
+            ],
+            "married": true,
+        };
+
+        let strUser = JSON.stringify(user);
+        console.log(1, user, typeof user);
+        console.log(2, strUser, typeof strUser);
+
+        let user2 = JSON.parse(strUser);
+        console.log(3, user2, typeof user2);
+        
+
+    </script>
+</head>
+
+<body>
+    <h1>JavaScript</h1>
+</body>
+
+</html>

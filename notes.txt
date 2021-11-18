@@ -1,0 +1,43 @@
+Objetos do navegador: 
+
+→objetos internos que nos ajudam a melhorar a interatividade com o usuário.
+---window; janela de visualização
+
+---navigator; info e recursos do próprio navegador
+    --userAgent, language, geolocation, online == true?
+
+---document; info e recursos da própria página
+    --document.getElementById('')
+
+→ parser = analisador de código
+
+no DOM, tudo é um node {
+    > o documento inteiro é um node 
+    > todo elemento é um node
+    > o texto doselementos são nodes
+    > comment node, attribute node
+    EVERYTHING IS A NODE (.nodeType, .nodeName, .nodeValue)
+
+    quantidade de filhos: childElementCount
+}
+
+formulários {
+    o elemento <form> engloba todos os campos e define o que deve ser feito com o formulário. Geralmente possui dois atributos: 
+
+        action- define o URL para o qual os dados do form devem ser enviados
+        method- define o método HTTP que será usado no envio dos dados (get/post)
+}
+
+JSON {
+    padrão para a representação de dados; JavaScript Object Notation
+
+    >algumas vezes, precisamos transformar um objeto JSON em uma string para enviarmos por um formulário, pela rede ou para armazenarmos localmente
+        >JSON.stringify(variável);
+        >JSON.parse(variável_string);
+}
+
+armazenamento local {
+    gardar informação no navegador do usuário. Essas informações podem ser recuperadas mais tarde, quando ele retornar ao nosso site. 
+
+        →Tipos de ino que podem ser guardadas
+}

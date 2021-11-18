@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+
+        function conf() {
+            let confirmation = confirm("Confirma a operação?")
+            if (confirmation)
+                alert("ta, ok.")
+            else
+                alert("ta, not ok")
+        }
+
+        window.onload = () => {
+            let nome = prompt("What is you name?", "Fulanos de tal")
+            alert(`Hello ${nome}.`)
+
+            let button = document.getElementById('btn');
+            button.innerHTML = '<strong>Click me, baby</strong>';
+            button.style.backgroundColor = '#D0D0FF';
+            button.style.height = '3em';
+            
+            bt.onclick = () => {
+                alert("hey, girl, heyyyy");
+            };
+
+        };
+
+
+    </script>
+</head>
+
+<body>
+    <p>Olá mundo em JavaScript</p>
+    <div>
+        <h1><a href="#" onclick="conf()">click here, bitch</a></h1>
+    </div>
+    <button id="bt">It's a button</button>
+    <br>
+    <button id="btn">Click me, baby</button>
+
+
+</body>
+
+</html>
+
+
+//como encaixar um código js na página
+//como disparar o código associando a um evento de algum elemento
+//prompt() - permite o usuário digite uma mensagem
+//método confirm() -
+
+/*addEventListener*/

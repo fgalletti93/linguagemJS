@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+
+        window.onload = () => {
+
+            let button = document.getElementById('bt');
+            alert(button.nodeName + ' ' + button.nodeType + ' ' + button.nodeValue);
+            alert(button.parentNode);
+            alert(button.firstChild.nodeValue);
+
+            let picture = document.getElementById('f1')
+            let paragraph = document.getElementById('p2');
+            paragraph.innerText = "Dolla dolla bills, yall." + ' ' + picture.getAttributeNames().join(', ');
+
+
+        };
+
+
+    </script>
+</head>
+
+<body>
+    <p>
+        <button id="bt">It's a button</button>
+    </p>
+
+    <p id="p2">
+        <img id="f1" href="." width="150">
+    </p>
+
+</body>
+
+</html>

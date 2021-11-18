@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <style>
+        form {
+            margin: 10%;
+            width: fit-content;
+            text-align: justify;
+            border: 1px solid black;
+        }
+    </style>
+
+    <script>
+        onload = () => {
+
+            nameUser.onchange = () => {
+                console.log(`name altered to ${nameUser.value}`);
+                if (nameUser.value != '' && senha.value != '') {
+                    btnsubmit.disabled = false
+                } else btnsubmit.disabled = true
+            };
+
+            senha.onchange = () => {
+                console.log(`password altered to ${senha.value}`);
+                if (nameUser.value != '' && senha.value != '') {
+                    btnsubmit.disabled = false
+                } else btnsubmit.disabled = true
+            }
+
+            emailUser.onblur = () => {
+                if (emailUser.value == '') {
+                    email_error.innerHTML = 'campo obrigatório!'
+                } else {
+                    email_error.innerHTML = ''
+                }
+            }
+
+            ageUser.onblur = () => {
+                if (ageUser.value < 18) {
+                    age_error.innerHTML = 'menor de idade!'
+                } else {
+                    age_error.innerHTML = ''
+                }
+            }
+
+            login.onsubmit = () => {
+                message.innerHTML = `Your account has been created with success, ${nameUser.value}`;
+                login.style.display = 'none';
+
+                return false
+            }
+            
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <h1>Create Account</h1>
+
+    <form id="login" action="login.html">
+        <p>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="nameUser">
+        </p>
+        <p>
+            <label for="date">Today's date: </label>
+            <input type="date" name="date" id="dateAccess">
+        </p>
+        <p>
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="emailUser">
+            <span id="email_error"></span>
+        </p>
+        <p>
+            <label for="age">Age: </label>
+            <input type="number" name="age" id="ageUser">
+            <span id="age_error"></span>
+        </p>
+
+        <p>
+            <label for="senha">Password: </label>
+            <input type="password" name="senha" id="senha">
+        </p>
+
+        <p>
+            <label for="satisfaction">Level of Satisfaciton:  </label>
+            <input type="range" name="satisfaction" id="satisfaction">
+        </p>
+
+        <p>
+            <button disabled id="btnsubmit" type="submit">Enter</button>
+        </p>
+
+
+    </form>
+
+    <p id="message">Please complete the login proccess</p>
+</body>
+
+</html>
