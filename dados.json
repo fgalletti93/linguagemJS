@@ -1,0 +1,14 @@
+{
+    "name": "Jackson",
+    "age": 36,
+    "children": [
+        {
+            "name": "Jessica",
+            "age": 13
+        }, {
+            "name": "Jefferson",
+            "age": 10
+        }
+    ],
+    "married": true
+}
