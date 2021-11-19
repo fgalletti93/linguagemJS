@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API On-line</title>
+
+
+    <script>
+        function ajax() {
+            try {
+                let xhttp = new XMLHttpRequest();
+
+                xhttp.onreadystatechange = function () {
+                    if (xhttp.readyState == 4) {
+                        console.log('status' + xhttp.status);
+                        let object = JSON.parse(xhttp.responseText);
+                        /*info.innerHTML = object.data.map(
+                            (e) => e.email
+                        ).join('<br>');*/
+                        console.log(object)
+
+                        /*info.innerHTML = object.data.first_name+" "+object.data.last_name+"<br>"+object.data.email;*/
+                    }
+
+                };
+                let user = {
+                    first_name: firstName.value,
+                    last_name: lastName.value,
+                    email: email.value
+                }
+                xhttp.open('POST', 'https://reqres.in/api/users', true);
+                //xhttp.open('GET', 'https://reqres.in/api/users/1', true);
+                xhttp.send(JSON.stringify(user));
+            } catch (e) {
+                alert("Erro na comunicação com o servidor")
+            }
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <h1>JavaScript</h1>
+
+    <div style="margin: 10px">
+        <button onclick="ajax()">Carrega dados</button>
+    </div>
+
+
+    <form action="">
+        <label for="firstName">First Nome: </label>
+        <input type="text" id="firstName">
+        <br>
+        <label for="lastName">Last Name: </label>
+        <input type="text" id="lastName">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+    </form>
+
+    <p style="border: solid black; padding: 20px" id="info"></p>
+
+</body>
+
+</html>
+
+
+<!--reqres.in-->
