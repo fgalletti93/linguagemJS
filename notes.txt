@@ -79,3 +79,23 @@ AJAX = Asynchronou JavaScript and XML {
         -A propriedade onreadystatechange do objeto XMLHttpRequest é chamada a cada vez que o estado da resposta (readyState) muda
 }
 
+Application Programming Interface {
+    a set of functions and procedures allowing the creation of applications that access the features or data of an operating system, application, or other service.
+        
+        geolocalização{
+            gps no aparelho
+            SSID do roteador
+            triangulação de antenas de celular
+
+            if (!!navigator.geolocation)
+                // use
+            else
+                //not available 
+
+                -tratamento de erro, geolocal contínua
+        }
+}
+
+
+
+[caniuse.com → provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.]

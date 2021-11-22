@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocalização</title>
+
+
+    <script>
+        onload = () => {
+            let geo = navigator.geolocation;
+            const geoCoords = function(p) {
+                let lat = p.coords.latitude;
+                let lng = p.coords.longitude;
+                output.innerHTML = `Coordinates: (${lat}, ${lng})`;
+            }
+            const geoError = function(e) {
+                console.log(e)
+            }
+            //geo.getCurrentPosition(geoCoords, geoError);
+            let watchID = geo.watchPosition(geoCoords, geoError);
+            console.log(watchID)
+            stopWatch.onclick = () => {
+                console.log(watchID)
+                geo.clearWatch(watchID);
+            }
+        };
+    </script>
+</head>
+<body>
+    
+    <h1>JavaScript</h1>
+    <p id="output"></p>
+
+    <button id="stopWatch">Para georeferenciamento</button>
+</body>
+</html>
