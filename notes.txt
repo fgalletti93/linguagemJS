@@ -97,7 +97,29 @@ Application Programming Interface {
 }
 
 indexedDB {
-    
+    oferece mais recursos de busca de dados que a API Web Storage, bem como o controle de versão do BD, funciona de forma assíncrona.
+
+        →Abrir um banco de dados (database) {
+            -posso ter vários do meu próprio site, cada um com seu nome e a versão;
+                -quando mudamos a versão, precisamos atualizar os dados armazenados nos navegadores dos usuários
+        }
+        →Criar um armazém de objetos (object store) {
+            -feito por meio de objetos colocados nos armazéns de objetos.
+                -podem ter estruturas diferentes 
+                -criação feita por meio da atualização
+            -precisamos de alguma forma de identificar cada objeto exclusivamente, será a chave do objeto
+                -criar por meio de um atributo qualquer
+                -número autoincrementado {autoIncrement: true}
+        }
+        →Iniciar uma transação e fazer alguma solicitação a banco (CRUD) {
+            -feitas por meio de uma transação
+                -uma transação pode ser dos tipos readonly, readwrite e -versionchange. Se omitido, será readonly.
+            
+        }
+        →Capturar a resposta (chamada assíncrona) {
+
+        }
+        →Fazer algo com os resultados
 }
 
 
