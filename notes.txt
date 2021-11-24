@@ -114,12 +114,28 @@ indexedDB {
         →Iniciar uma transação e fazer alguma solicitação a banco (CRUD) {
             -feitas por meio de uma transação
                 -uma transação pode ser dos tipos readonly, readwrite e -versionchange. Se omitido, será readonly.
-            
         }
-        →Capturar a resposta (chamada assíncrona) {
-
-        }
+        →Capturar a resposta (chamada assíncrona) 
         →Fazer algo com os resultados
+}
+
+File {
+    →esta API permite que o navegador carregue um arquivo para envio ao servidor ou para uso na própria página
+        -tudo começa com um campo do tipo file que permite carregarmos um ou mais arquivos
+        -cada arquivos é um OBJETO, contendo os seguintes atributos {
+            name, type, size, lastModified..
+        }
+        -estratégia de formatação para deixar mais elegante, criação de outro elemento que o substitua
+
+            {
+                Array.from(arquivos.files).map...
+            }
+
+        -é possível selecionar os arquivos por tipo: accept="image/*/">
+            {
+                tratamento de arquivo text para abrir o arquivo e ler o conteud, precisa do FileReader
+            }
+            readAsText, readAsDataURL
 }
 
 
