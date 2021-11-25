@@ -168,6 +168,15 @@ Canvas {
             }
 }
 
+Workers {
+    -script executado em segundo plano, paralelamente ao código principal. 
+        {
+            os workers são usados para operações lentas ou que precisem monitorar algum processo. Assim, o navegador não fica travado
+
+            o código do worker pode ser carregado a partir de um arquivo específico: a partir daí, esse worker fica aguardando alguma solicitação do script principal
+        }
+}
+
 
 
 

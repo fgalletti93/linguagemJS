@@ -1,0 +1,27 @@
+-O que são bibliotecas e como elas podem ser usadas em aplicações web?
+-Bibliotecas jQuery e D3JS. 
+        {
+            [https://www.npmjs.com/]
+        }
+
+LIBRARY VS. FRAMEWORK {
+    →A library is like going to Ikea. You already have a home, but you need a bit of help with furniture. You don’t feel like making your own table from scratch. Ikea allows you to pick and choose different things to go in your home. You are in control.
+
+    →A framework, on the other hand, is like building a model home. You have a set of blueprints and a few limited choices when it comes to architecture and design. Ultimately, the contractor and blueprint are in control. And they will let you know when and where you can provide your input.
+
+    →When you use a library, you are in charge of the flow of the application. You are choosing when and where to call the library. When you use a framework, the framework is in charge of the flow. It provides some places for you to plug in your code, but it calls the code you plugged in as needed.
+}
+
+jQuery: {
+    vantagens- acelera o processo de desenvolvimento, operações que exigiram vários comandos são simplificadas, é compatível com todos os navegadores, é extensível através de plugins
+    instalação- pode ser usado por meio de um arquivo instalado localmente ou por meio do CDN 
+
+        {
+            funcionalidades: 
+                núcleo básico, seleção de percurso, HTML & CSS, eventos, efeitos, AJAX, U.I., extensibilidade
+        }
+}
+
+d3: Data-Driven Documents {
+
+}
