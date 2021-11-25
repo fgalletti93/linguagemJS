@@ -8,6 +8,49 @@
     <title>Script Injection</title>
 
     <script src="file.js"></script>
+    <script src="dragdrop.js"></script>
+    <script src="canvas.js"></script>
+
+    <style>
+        .box {
+            width: 50px;
+            height: 50px;
+            background: #b9f;
+            border: 2px solid black;
+        }
+
+        .zone {
+            float: left;
+            margin-right: 2em;
+            border: thick dashed;
+            width: 100px;
+            height: 100px;
+        }
+
+        .zone-over {
+            opacity: 0.5;
+        }
+
+        .red {
+            border-color: #f33;
+        }
+
+        .blue {
+            border-color: #33f;
+        }
+
+        .black {
+            background-color: black;
+        }
+
+        #output {
+            margin: 10px;
+        }
+
+        #drawing {
+            border: solid black;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,7 +58,8 @@
     <!--Aula 4.6 File-->
     <h1>File</h1>
     <div>
-        <input type="file" id="selectedFiles" style="display: none;" accept="image/*/"> <!--multiple; accept="text/plain"-->
+        <input type="file" id="selectedFiles" style="display: none;" accept="image/*/">
+        <!--multiple; accept="text/plain"-->
 
         <button id="btnFiles">Select File(s)</button>
     </div>
@@ -23,6 +67,19 @@
     <input type="hidden" id="photo">
 
     <div id="output"></div>
+
+
+    <!--Aula 4.7 Drag & Drop-->
+    <div id="zone1" class="zone red">
+        <div id="box" class="box" draggable="true"></div>
+    </div>
+    <div id="zone2" class="zone blue"></div>
+
+
+    <!--Aula 4.8 Canvas-->
+    <canvas id="drawing" width="400" height="500">
+        Seu navegador não suporta Canvas
+    </canvas>
 </body>
 
 </html>

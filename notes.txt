@@ -138,6 +138,47 @@ File {
             readAsText, readAsDataURL
 }
 
+Drag & Drop {
+    →podemos arrastar qualquer tipo de objeto pela tela, tendo e usando o atributo draggable
+        -precisamos identificar o elemento que será transferido e qual é o seu tipo.
+        -para a maioria dos elementos HTML, o tipo text/plain será suficiente. Mas podemos arrastar objetos de outros tipos como as imagens 
+            {
+               criar os eventos das zonas. 
+               1. o primeiro é quando o objeto está sobre essa zona 
+               2.evento final para soltar o objeto
+            }
+}
+
+Canvas {
+    →transforma a página em uma àrea em que podemos desenhar livremente
+        {
+            operações realizadas por meio de contexto
+        }
+            -o retângulo é uma das formas básicas da API: 
+                fillRect, strokeRect, clearRect
+            -o caminho é a seguna forma básica
+                o desenho é feito a partir do rastro do cursor
+                beginPath, moveTo, lineTo, fill, closePath, stroke
+            -arcos, curva quadrática, curva de bézier
+            - cores, propriedades do contexto: {
+                fillStyle, strokeStyle,globalAlpha
+            }
+            estilos de linha {
+                lineWidth, lineCap, lineJoin, miterLimit
+            }
+}
+
+
+
+
+
+
+
+
 
 
 [caniuse.com → provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.]
+
+[https://javascript.info/ → the modern JavaScript Tutorial]
+
+[https://www.w3schools.com/]
