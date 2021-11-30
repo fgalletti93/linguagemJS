@@ -20,6 +20,20 @@ jQuery: {
             funcionalidades: 
                 núcleo básico, seleção de percurso, HTML & CSS, eventos, efeitos, AJAX, U.I., extensibilidade
         }
+
+        seletores: não retornam os elementos HTML da página, mas um conjunto de objetos da própria jQuery que atendem aos critérios dos seletores. Esses critérios são os mesmos da CSS.
+            {
+                $('#ola').click( () => alert("Olá mundo!"));
+
+                <button id="ola"> </button> 
+            }
+        eventos: também oferece uma alternativa à criação de eventos. No entanto é importante saber que o evento não é criado diretamente sobre o elemento HTML, mas sobre o conjunto resposta da seleção. 
+            {
+                *stopPropagation
+                *o objeto evento
+            }
+        filtro: forma de reduzir o conjunto de elementos selecionados àqueles que atendam a uma determinada condição
+        transformação: transformar um conjunto em outro por meio do método map()
 }
 
 d3: Data-Driven Documents {

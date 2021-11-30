@@ -7,22 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery</title>
 
+    <style>
+        .alert {
+            background-color: red;
+            color: white;
+        }
+        .dark {
+            background-color: rgb(2, 48, 2);
+            color: gainsboro;
+        }
+        .hidden {
+            visibility: hidden;
+        }
+    </style>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-    <script>
-        $(document).ready(function () {
-            $('#btn').click(function (){
-                alert('you clicked the button.');
-            });
-        });
-    </script>
+    <script src="jQuery.js"> </script>
 
 </head>
 
 <body>
     <h1>JavaScript</h1>
     <button id="btn">Click me, hot stuff</button>
+
+    <h2>jQuery</h1>
+        <div id="d1">First Div</div>
+        <div id="d2">Second Div</div>
+        <div id="d3"><strong id="random">Third Div</strong></div>
+
+
+    <div>
+        <p id="p1">First Paragraph</p>
+        <p id="p2">Second Paragraph</p>
+        <p id="p3">Third Paragraph</p>
+        <p id="p4">Fourth Paragraph</p>
+        <p id="p5">Fith Paragraph</p>
+        <p id="p6">Sixth Paragraph</p>
+    </div>
 </body>
 
 </html>
