@@ -37,5 +37,17 @@ jQuery: {
 }
 
 d3: Data-Driven Documents {
+    biblioteca para manipular o Dom a partir de um conjunto de dados, usa apenas os padrões Web e faz muitas das operações da jQuery. 
 
+        {
+            *objeto d3. tudo feito encima dele 
+        }
+
+        seleções: podemos usar select() ou selectAll(). Os seletores são os mesmos da CSS. 
+        edição do doc, reordenação dos elementos,
 }
+
+
+
+
+SVG → scalable vector graphics

@@ -24,7 +24,6 @@ $(document).ready(function () {
     let listIDs = $('p')
         .map(function () {
             return $(this).attr('id');
-        })
-        .get();
+        }).get();
         console.log(listIDs.join(', '))                 
 });

@@ -1,0 +1,39 @@
+#graph div {
+    background-color: lightblue;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+#grafico {
+    width: 500px;
+    height: 300px;
+    border: thin solid black;
+}
+
+.barra {
+    stroke: black;
+}
+
+.rotulo {
+    text-anchor: middle;
+}
+
+#eixoX text{
+     font-size: 120%;
+     text-anchor: end;
+     transform: translate(-8px, 2px) rotate(-45deg);
+}
+
+#eixoY text {
+    font-size: 120%;
+}
+
+#grade path {
+    display: none;
+}
+
+#grade line{
+    stroke: #AAA;
+    stroke-dasharray: 2, 2;
+}
