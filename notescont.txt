@@ -47,7 +47,55 @@ d3: Data-Driven Documents {
         edição do doc, reordenação dos elementos,
 }
 
-
-
-
 SVG → scalable vector graphics
+
+                            **JS AVANÇADA
+objetos dos tipos: {
+    cada tipo de dado tem um objeto correspondente que permite realizar operações mais sofisticadas
+}
+
+RegExp: {
+    padrões de caracteres para, entre outras operações, buscar, comparar, validar e dividir strings
+
+        →https://cheatography.com/davechild/cheat-sheets/regular-expressions/
+}
+
+
+
+*Carga dos scripts: {
+    Quando usamos um arquivo de scripts externo, a carga dele e sua execução acontecem antes do resto do documento ser carregado
+
+    o atributo "defer" segura a execução do script até a montagem do DOM
+        {
+            <script defer src="script.js"> </script>
+        }
+
+        /*onload = () => {
+
+        }*/
+
+    o atributo "async", script é carregado paralelamente e executado logo que esteja pront.    
+        {
+            <script async src="script.js"> </script>
+        }
+
+}
+
+gerenciamento de erros: {
+        toda operação em que um erro puder ocorrer deve ser escrita dentro de um bloco try...catch. Nesse bloco, uma sequência de operações é colocada dentro de um bloco try. Se, a qualquer momento, ocorrer um erro, esse bloco é encerrado e a execução passa para o bloco catch imediatamente. 
+}
+
+sintaxe de espalhamento: {
+    allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
+
+    *A notação de desestruturação é mais simples do que a extração manual dos valores de um vetor
+}
+
+Propriedades {
+    cada propriedade é chamada de propriedade de dados, porque armazena um dado
+
+        ex. { prenome: 'José'}
+    
+    podemos criar algumas Propriedades na forma de função, mas que são usadas como prop. de dados (de acesso)
+
+}
