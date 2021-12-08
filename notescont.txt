@@ -99,3 +99,33 @@ Propriedades {
     podemos criar algumas Propriedades na forma de função, mas que são usadas como prop. de dados (de acesso)
 
 }
+
+Closure: {
+    é uma forma como uma função se lembra de seu contexto, mesmo que esse contexto esteja fechado. 
+}
+
+this: {
+    se refere ao objeto pradrão dentro de um determinado contexto. No contexto global, ele se refere ao objeto global, que é o objeto Window
+}
+
+protótipo: {
+    um objeto vira um protótipo para eu criar novos objetos. 
+    Todo objeto em JS tem um protótipo que pode, MAS NÃO DEVE, ser acessado por meio da propriedade __proto__.
+
+        criar um objeto a partir do outro = Object.create()
+}
+
+Immediately Invoked Function Expression (IIFE): {
+    a JavaScript function that runs as soon as it is defined.
+        → (function () {
+            statements
+           })();
+
+    It is a design pattern which is also known as a Self-Executing Anonymous Function and contains two major parts:
+
+        →The first is the anonymous function with lexical scope enclosed within the Grouping Operator (). This prevents accessing variables within the IIFE idiom as well as polluting the global scope.
+        →The second part creates the immediately invoked function expression () through which the JavaScript engine will directly interpret the function.
+
+    muito usadas pelas bibliotecas, geralmente, o código sad libs é muito sofisticado e se deseja evitar um acesso direto a seus métodos.
+
+}
