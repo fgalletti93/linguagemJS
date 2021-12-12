@@ -129,3 +129,28 @@ Immediately Invoked Function Expression (IIFE): {
     muito usadas pelas bibliotecas, geralmente, o código sad libs é muito sofisticado e se deseja evitar um acesso direto a seus métodos.
 
 }
+
+chamada assíncrona: {
+    deve incluir a função a ser executada quando a operação for concluída. 
+
+        let fnSucesso = function(resposta) {
+            // faz alguma coisa com a resposta
+        };
+        let fnFalha = function(erro) {
+            // trata o erro
+        };
+        fnAsync(dados, fnSucesso, fnFalha);
+
+    um Promise é uma promessa de resposta. Essa estrutura busca padronizar a forma de criação de funções assíncronas. Resolve e Reject são os nomes comumente usados com promises para as funções de sucesso e de falha
+        fnAsync(dados).then(fnResolve, fnReject);
+
+    o objetivo é permitir a realização de algum processo lento, sem travar a interação com o usuário.
+
+
+    a simplificação do código é feita por meio do uso do operador async
+}
+
+[.blob() → binary large object]
+[CORS → Cross-Origin Resource Sharing; arquivos de outros domínios só podem ser acessados se o servidor aceitar requisições externas]
+
+console.log(console.memory) → MemoryInfo
