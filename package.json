@@ -1,0 +1,25 @@
+{
+  "name": "pos-graduacao",
+  "version": "1.0.0",
+  "description": "minha aplicaçao de teste",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fgalletti93/linguagemJS.git"
+  },
+  "author": "Francesca Beatrice Gallett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fgalletti93/linguagemJS/issues"
+  },
+  "homepage": "https://github.com/fgalletti93/linguagemJS#readme",
+  "dependencies": {
+    "translate": "^1.4.1",
+    "uuid": "^8.3.2"
+  }
+}
